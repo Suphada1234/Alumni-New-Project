@@ -93,13 +93,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <br>
                 <h3><span class="badge" style="background-color:#e7ab3c;color:#fff;">แก้ไขข้อมูลส่วนตัว</span></h3>
                 <hr>
-
+ 
             <?php foreach ($query as $rs) { ?>
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                            <img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image" 
+                 
+                            <img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" name="" id="image" 
                             src="<?php echo base_url('upload');?>/<?php echo $rs['img']?>">    
-                    </div>
+                    </div> 
                     <div class="form-group col-md-9">
                         <input type="file" id="inputImage" class="form-control" onchange="readURL(this);"
                             accept="image/*" name="img"   >

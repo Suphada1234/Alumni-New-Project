@@ -148,6 +148,7 @@ class Manage extends CI_Controller
             $config['encrypt_name']  = true; //กำหนดเป็น true ให้ระบบ เปลียนชื่อ ไฟล์  อัตโนมัติ  ป้องกันกรณีชื่อไฟล์ซ้ำกัน
             $this->load->library('upload', $config);
             $this->upload->do_upload('upload');
+            
 
         $datapersonal = array(
             'card_id' => $this->input->post("card_id"),
@@ -194,7 +195,7 @@ class Manage extends CI_Controller
         //print_r($this->Manage_model->update_personal($datapersonal,$id));
 		$this->Manage_model->update_alumni($dataalumni,$id);
 		$this->Manage_model->update_work($dataworkinformation,$id);
-		//redirect('Welcome/homelogin');
+		redirect('Welcome/homelogin');
         }
    
     
