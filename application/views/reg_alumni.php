@@ -18,17 +18,6 @@
                 <h3><span class="badge" style="background-color:#e7ab3c;color:#fff;">ข้อมูลส่วนตัว</span></h3>
                 <hr>
                 <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image" 
-                            src="<?php echo base_url();?>upload/user.png">
-                    </div>
-                    <div class="form-group col-md-9">
-                        <input type="file" id="inputImage" class="form-control" onchange="readURL(this);"
-                            accept="image/*" name="upload">
-                        <br>
-                        <label>เลขบัตรประชาชน <span style="color:red;">*</span></label>
-                        <input type="text" class="form-control" name="card_id" id="card_id">
-                    </div>
                     <div class="form-group col-md-2">
                         <label>คำนำหน้า</label>
                         <select id="" class="form-control" name="prefix">

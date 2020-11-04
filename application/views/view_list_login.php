@@ -102,17 +102,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <td>';
             echo $row->name;
             echo ' </td>
-                        <td rowspan="3"  style="width:130px;" >';
-            if ($row->img != "noImage") {
-                echo '<img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image"
-                                    src="<?php echo base_url(); ?>/upload/';
-                echo $row->img;
-                echo ' ">';
-            } else {
-                echo '<img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image"
-                                    src="<?php echo base_url(); ?>/upload/user.png">';
-            }
-            echo ' </td>
                     </tr>
                     <tr>
                         <td>เพศ</td>
