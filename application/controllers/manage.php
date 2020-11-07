@@ -194,7 +194,7 @@ class Manage extends CI_Controller
         //print_r($this->Manage_model->update_personal($datapersonal,$id));
 		$this->Manage_model->update_alumni($dataalumni,$id);
 		$this->Manage_model->update_work($dataworkinformation,$id);
-		//redirect('Welcome/homelogin');
+		redirect('Welcome/homelogin');
         }
    
     

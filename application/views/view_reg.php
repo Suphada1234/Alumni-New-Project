@@ -60,10 +60,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <li class=""><a href="<?php echo base_url(); ?>index.php/welcome/reg_alumni">ลงทะเบียน</a></li>
 
 
-                    <li class="edit"><a href="edit.php">ประวัติส่วนตัว</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#logout">ออกจากระบบ</a></li>
-
-
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
@@ -104,23 +100,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <tr>
                         <td style="width:130px;">ชื่อ - นามสกุล</td>
                         <td>';
-            echo $row->name;
-            echo ' </td>
-                        <td rowspan="3"  style="width:130px;" >';
-            if ($row->img != "noImage") {
-                echo '<img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image"
-                                    src="img/upload/';
-                echo $row->img;
-                echo ' ">';
-            } else {
-                echo '<img style="width:125px;border:1px solid #e7ab3c; border-radius: 4px;" id="image"
-                                    src="img/user.png">';
-            }
-            echo ' </td>
-                    </tr>
-                    <tr>
-                        <td>เพศ</td>
-                        <td>';
+                        echo $row->name; 
+                        echo ' </td>
+                                    <td rowspan="5"  style="width:200px;" >';
+                            echo '<img style="width:175px;height:220px; border:1px solid #e7ab3c; border-radius: 4px; position:absolute;" id="image"
+                                                src="'.base_url().'/upload/'.$row->img.'">';
+                        echo ' </td>
+                                </tr>
+                                <tr>
+                                    <td>เพศ</td>
+                                    <td>';
             echo $row->gender;
             echo ' </td>
                     </tr>
