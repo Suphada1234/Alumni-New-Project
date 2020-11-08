@@ -93,18 +93,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </footer>
 <!-- Footer End -->
 <!-- Js Plugins -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
-<script src="js/jquery.dd.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script src="source/dataTables/jquery.dataTables.min.js"></script>
-<script src="source/dataTables/dataTables.bootstrap4.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery-3.3.1.min.js"></script>
+<script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery.countdown.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery.nice-select.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery.zoom.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery.dd.min.js"></script>
+<script src="<?php echo base_url(); ?>js/jquery.slicknav.js"></script>
+<script src="<?php echo base_url(); ?>js/owl.carousel.min.js"></script>
+<script src="<?php echo base_url(); ?>js/main.js"></script>
+<script src="<?php echo base_url(); ?>source/dataTables/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url(); ?>source/dataTables/dataTables.bootstrap4.min.js"></script>
 <script>
 $(document).ready(function() {
     $('#example').DataTable();

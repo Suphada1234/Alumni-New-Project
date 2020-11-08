@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 	}
 
 	public function view_reg(){
-		$data['query'] =$this->Manage_model->showone($id);
+		$data['query'] =$this->Manage_model->showone();
 		$this->load->view('view_reg',$data);
 		$this->load->view('footer');	
 	}

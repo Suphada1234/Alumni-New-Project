@@ -40,7 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div style="text-align: center;">
                         <h2>ระบบสมาชิกศิษย์เก่า</h2>
                         <h3>Nakhon Pathom Rajabhat University</h3>
-                        <img src="<?php echo base_url(); ?>img/npru.png">
+                        <img src="<?php echo base_url(); ?>upload/npru.png">
                     </div>
                 </div>
                 <div class="col-lg-2 text-right col-md-2">
