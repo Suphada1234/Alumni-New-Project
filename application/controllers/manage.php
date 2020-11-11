@@ -147,8 +147,17 @@ class Manage extends CI_Controller
             //$config['max_height']    = 768;  //ขนาดความสูงสูงสดุ (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
             $config['encrypt_name']  = true; //กำหนดเป็น true ให้ระบบ เปลียนชื่อ ไฟล์  อัตโนมัติ  ป้องกันกรณีชื่อไฟล์ซ้ำกัน
             $this->load->library('upload', $config);
-            $this->upload->do_upload('upload');
-            
+            $this->upload->do_upload('img');
+           
+            // $i=0;
+            // foreach ($this->upload->data() as $item => $value){
+            //   echo $item; echo $value; echo "<br>";
+            //   if($i==0){
+            //     $img_name = $value;
+            //   }
+            //   $i++;
+            // }
+            // echo "path = ".$img_name;
 
         $datapersonal = array(
             'card_id' => $this->input->post("card_id"),
